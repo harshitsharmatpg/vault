@@ -1,20 +1,23 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.4.0">
   <diagram name="Page-1" id="inGpVrM_c4B5ekvnlN2K">
-    <mxGraphModel>
+    <mxGraphModel dx="1234" dy="1803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="âš ï¸ Incident Detection&#xa;Check Incident Flag from Orchestrator&#xa;RED/GREEN" vertex="1">
-          <mxGeometry height="126" width="260" x="426" y="8" as="geometry" />
+        <mxCell id="Kn3hUWXzdmEV8L69bxVy-28" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Kn3hUWXzdmEV8L69bxVy-27" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="Flag Status" vertex="1">
-          <mxGeometry height="132" width="132" x="489" y="184" as="geometry" />
+        <mxCell id="2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="!! Incident Detection !!&#xa;Check Incident Flag from Orchestrator&#xa;RED/GREEN" vertex="1">
+          <mxGeometry height="142" width="410" x="350" as="geometry" />
         </mxCell>
-        <mxCell id="4" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="í ½í»‘ Terminate Workflow" vertex="1">
+        <mxCell id="3" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=22;" value="Flag Status" vertex="1">
+          <mxGeometry height="146" width="141" x="480" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Â Terminate Workflow" vertex="1">
           <mxGeometry height="54" width="231" x="8" y="1342" as="geometry" />
         </mxCell>
-        <mxCell id="5" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Incident Verification&#xa;Detect Incident on Application&#xa;Element Exists" vertex="1">
-          <mxGeometry height="126" width="260" x="426" y="390" as="geometry" />
+        <mxCell id="5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="Incident Verification :&#xa;Detect Incident on Application With&#xa;Element Exists" vertex="1">
+          <mxGeometry height="126" width="260" x="423" y="410" as="geometry" />
         </mxCell>
         <mxCell id="6" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Log Warning" vertex="1">
           <mxGeometry height="54" width="147" x="848" y="1342" as="geometry" />
@@ -22,7 +25,7 @@
         <mxCell id="7" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="Incident&#xa;Detected?" vertex="1">
           <mxGeometry height="149" width="149" x="481" y="566" as="geometry" />
         </mxCell>
-        <mxCell id="8" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Incident Response Trigger&#xa;Set Flag RED + Raise System Exception&#xa;Capture URL &amp;amp; Message" vertex="1">
+        <mxCell id="8" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Incident Response Trigger&#xa;Set Flag RED + Raise System Exception&#xa;Capture URL &amp; Message" vertex="1">
           <mxGeometry height="126" width="260" x="286" y="790" as="geometry" />
         </mxCell>
         <mxCell id="9" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Continue Monitoring" vertex="1">
@@ -31,30 +34,31 @@
         <mxCell id="10" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Disable Job Triggers&#xa;Invoke OrchestratorTriggers.xaml&#xa;Disable Associated Triggers" vertex="1">
           <mxGeometry height="126" width="260" x="286" y="966" as="geometry" />
         </mxCell>
-        <mxCell id="11" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="í ½í»‘ Stop Current Job&#xa;Stop Current Job via Orchestrator API&#xa;Graceful Termination" vertex="1">
+        <mxCell id="11" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Â Stop Current Job&#xa;Stop Current Job via Orchestrator API&#xa;Graceful Termination" vertex="1">
           <mxGeometry height="126" width="260" x="286" y="1142" as="geometry" />
         </mxCell>
-        <mxCell id="12" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="í ½í³§ Notification &amp;amp; Logging&#xa;Send Email to Stakeholders&#xa;Log Incident Details" vertex="1">
+        <mxCell id="12" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Â Notification &amp; Logging&#xa;Send Email to Stakeholders&#xa;Log Incident Details" vertex="1">
           <mxGeometry height="102" width="255" x="289" y="1318" as="geometry" />
         </mxCell>
-        <mxCell id="13" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="End Handler&#xa;Close Applications &amp;amp; Exit DIH&#xa;Prepare for Restart" vertex="1">
-          <mxGeometry height="126" width="260" x="426" y="1470" as="geometry" />
+        <mxCell id="13" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=30;verticalAlign=bottom;" value="End Handler&#xa;" vertex="1">
+          <mxGeometry height="106" width="260" x="426" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="14" edge="1" parent="1" source="2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="3" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="15" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.62;entryX=0.5;entryY=0;" target="4" value="RED">
+        <mxCell id="15" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.62;entryX=0.5;entryY=0;fontStyle=1;fontSize=22;strokeColor=light-dark(#000000,#990000);fontColor=light-dark(#000000,#CC0000);labelBorderColor=light-dark(#000000,#FF3333);" target="4" value="RED">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="123" y="353" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="16" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="5" value="GREEN">
+        <mxCell id="16" edge="1" parent="1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=22;strokeColor=light-dark(#005700,#33FF33);fontStyle=1;fillColor=#008a00;fontColor=light-dark(#000000,#006600);labelBorderColor=light-dark(#000000,#66FF66);" target="5" value="GREEN">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
+            <mxPoint x="548.5" y="330" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="17" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=1.01;exitY=0.64;entryX=0.5;entryY=0;" target="6" value="Invalid">
@@ -125,6 +129,9 @@
               <mxPoint x="695" y="1445" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Kn3hUWXzdmEV8L69bxVy-27" parent="1" style="whiteSpace=wrap;html=1;fontSize=22;strokeWidth=2;" value="START" vertex="1">
+          <mxGeometry height="60" width="120" x="495" y="-181" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
