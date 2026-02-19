@@ -1,0 +1,132 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.4.0">
+  <diagram name="Page-1" id="inGpVrM_c4B5ekvnlN2K">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="âš ï¸ Incident Detection&#xa;Check Incident Flag from Orchestrator&#xa;RED/GREEN" vertex="1">
+          <mxGeometry height="126" width="260" x="426" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="Flag Status" vertex="1">
+          <mxGeometry height="132" width="132" x="489" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="í ½í»‘ Terminate Workflow" vertex="1">
+          <mxGeometry height="54" width="231" x="8" y="1342" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Incident Verification&#xa;Detect Incident on Application&#xa;Element Exists" vertex="1">
+          <mxGeometry height="126" width="260" x="426" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Log Warning" vertex="1">
+          <mxGeometry height="54" width="147" x="848" y="1342" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="Incident&#xa;Detected?" vertex="1">
+          <mxGeometry height="149" width="149" x="481" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Incident Response Trigger&#xa;Set Flag RED + Raise System Exception&#xa;Capture URL &amp;amp; Message" vertex="1">
+          <mxGeometry height="126" width="260" x="286" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Continue Monitoring" vertex="1">
+          <mxGeometry height="54" width="205" x="593" y="1342" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Disable Job Triggers&#xa;Invoke OrchestratorTriggers.xaml&#xa;Disable Associated Triggers" vertex="1">
+          <mxGeometry height="126" width="260" x="286" y="966" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="í ½í»‘ Stop Current Job&#xa;Stop Current Job via Orchestrator API&#xa;Graceful Termination" vertex="1">
+          <mxGeometry height="126" width="260" x="286" y="1142" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="í ½í³§ Notification &amp;amp; Logging&#xa;Send Email to Stakeholders&#xa;Log Incident Details" vertex="1">
+          <mxGeometry height="102" width="255" x="289" y="1318" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="End Handler&#xa;Close Applications &amp;amp; Exit DIH&#xa;Prepare for Restart" vertex="1">
+          <mxGeometry height="126" width="260" x="426" y="1470" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.62;entryX=0.5;entryY=0;" target="4" value="RED">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="123" y="353" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="5" value="GREEN">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=1.01;exitY=0.64;entryX=0.5;entryY=0;" target="6" value="Invalid">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="921" y="353" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="5" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" edge="1" parent="1" source="7" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.9;entryX=0.5;entryY=0;" target="8" value="Yes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="416" y="753" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="7" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.9;entryX=0.5;entryY=0;" target="9" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="695" y="753" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="8" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="10" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="11" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="12" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.11;entryY=0;" target="13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="416" y="1445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="4" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.29;" target="13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="123" y="1445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="6" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.25;" target="13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="921" y="1445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="9" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.88;entryY=0;" target="13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="695" y="1445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
