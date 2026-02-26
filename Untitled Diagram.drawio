@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.4.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.5.3">
   <diagram name="Page-1" id="inGpVrM_c4B5ekvnlN2K">
-    <mxGraphModel dx="3545" dy="3059" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2469" dy="2438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="3" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=22;" value="Flag Status" vertex="1">
           <mxGeometry height="146" width="141" x="480" y="184" as="geometry" />
         </mxCell>
-        <mxCell id="4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;" value="Throw a system exception." vertex="1">
+        <mxCell id="4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;align=left;" value="1. Throw a system exception&#xa;2. Send Notification email." vertex="1">
           <mxGeometry height="54" width="231" x="30" y="880" as="geometry" />
         </mxCell>
         <mxCell id="5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="Detect Incident on Application With&#xa;Element Exists" vertex="1">
