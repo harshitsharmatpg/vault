@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.5.3">
   <diagram name="Page-1" id="inGpVrM_c4B5ekvnlN2K">
-    <mxGraphModel dx="2555" dy="2057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3190" dy="2429" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="3" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fontSize=22;" value="Flag Status" vertex="1">
           <mxGeometry height="146" width="141" x="480" y="184" as="geometry" />
         </mxCell>
-        <mxCell id="4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;align=left;" value="1. Throw a system exception&#xa;2. Send Notification email." vertex="1">
+        <mxCell id="4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;align=left;" value="   1. Throw a system exception&#xa;X 2. Send Notification email." vertex="1">
           <mxGeometry height="70" width="300" x="-30" y="880" as="geometry" />
         </mxCell>
         <mxCell id="5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=22;" value="Detect Incident on Application With&#xa;Element Exists (Arg 3 - Selector) (Arg 4 - Timeout)" vertex="1">
@@ -31,8 +31,8 @@
         <mxCell id="Kn3hUWXzdmEV8L69bxVy-32" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;align=left;" value="&#xa;  1. Set Flag RED &#xa;    &#xa;  2. Capture URL &amp; Message&#xa;&#xa;  3. Disable Triggers (Arg 5:Process Name)&#xa;&#xa;  4. Stop all pending &amp; running jobs &#xa;&#xa;  5. Send Notification Email (Arg 6 : Email Id)&#xa;&#xa;  6. Throw a system exception." vertex="1">
-          <mxGeometry height="290" width="365" x="210" y="976" as="geometry" />
+        <mxCell id="8" parent="1" style="whiteSpace=wrap;strokeWidth=2;fontSize=18;align=left;" value="&#xa;    1. Set Flag RED &#xa;    &#xa; X 2. Capture URL &amp; Message&#xa;&#xa; X 3. Disable Triggers (Arg 5:Process Name)&#xa;&#xa; X 4. Stop all pending &amp; running jobs &#xa;&#xa; X 5. Send Notification Email (Arg 6 : Email Id)&#xa;&#xa;    6. Throw a system exception." vertex="1">
+          <mxGeometry height="290" width="380" x="210" y="976" as="geometry" />
         </mxCell>
         <mxCell id="Kn3hUWXzdmEV8L69bxVy-31" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="13">
           <mxGeometry relative="1" as="geometry" />
@@ -48,11 +48,9 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="15" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.62;entryX=0.5;entryY=0;fontStyle=1;fontSize=22;strokeColor=light-dark(#000000,#990000);fontColor=light-dark(#000000,#CC0000);labelBorderColor=light-dark(#000000,#FF3333);" target="4" value="RED">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="123" y="353" />
-            </Array>
+        <mxCell id="15" edge="1" parent="1" source="3" style="startArrow=none;endArrow=block;exitX=0;exitY=1;entryX=0.5;entryY=0;fontStyle=1;fontSize=22;strokeColor=light-dark(#000000,#FF0000);fontColor=light-dark(#000000,#CC0000);labelBorderColor=light-dark(#000000,#FF3333);exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" target="4" value="RED">
+          <mxGeometry relative="1" x="-0.5819" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="16" edge="1" parent="1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=22;strokeColor=light-dark(#005700,#33FF33);fontStyle=1;fillColor=#008a00;fontColor=light-dark(#000000,#006600);labelBorderColor=light-dark(#000000,#66FF66);" target="5" value="GREEN">
@@ -61,11 +59,9 @@
             <mxPoint x="548.5" y="330" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="17" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=1.01;exitY=0.64;entryX=0.5;entryY=0;fontSize=22;fontColor=light-dark(#000000,#FF8000);labelBorderColor=light-dark(#000000,#FF8000);strokeColor=light-dark(#000000,#FF8000);" target="6" value="Invalid">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="921" y="353" />
-            </Array>
+        <mxCell id="17" edge="1" parent="1" source="3" style="startArrow=none;endArrow=block;exitX=1;exitY=1;entryX=0.5;entryY=0;fontSize=22;fontColor=light-dark(#000000,#FF8000);labelBorderColor=light-dark(#000000,#FF8000);strokeColor=light-dark(#000000,#FF8000);exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" target="6" value="Invalid">
+          <mxGeometry relative="1" x="-0.7925" as="geometry">
+            <mxPoint x="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="18" edge="1" parent="1" source="5" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="7" value="">
@@ -144,6 +140,32 @@
         </mxCell>
         <mxCell id="vj72QkvmJT7VieNwkVV--57" edge="1" parent="1" source="vj72QkvmJT7VieNwkVV--28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.348;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;endSize=24;" target="vj72QkvmJT7VieNwkVV--54">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vj72QkvmJT7VieNwkVV--58" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;SYSTEM EXCEPTION&lt;/font&gt;" vertex="1">
+          <mxGeometry x="190" y="-500" as="geometry" />
+        </mxCell>
+        <mxCell id="vj72QkvmJT7VieNwkVV--61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Log warning ! Skip to End&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="200" x="1020" y="968" as="geometry" />
+        </mxCell>
+        <mxCell id="vj72QkvmJT7VieNwkVV--63" edge="1" parent="1" source="vj72QkvmJT7VieNwkVV--61" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;endFill=0;fillColor=#0050ef;strokeColor=light-dark(#001DBC,#FF66EA);" target="3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1040" y="460" as="sourcePoint" />
+            <mxPoint x="1090" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vj72QkvmJT7VieNwkVV--64" connectable="0" parent="vj72QkvmJT7VieNwkVV--63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=light-dark(#000000,#FF00FF);" value="&lt;font style=&quot;font-size: 20px; color: light-dark(rgb(0, 0, 0), rgb(255, 102, 255));&quot;&gt;DISABLE&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3163" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vj72QkvmJT7VieNwkVV--65" edge="1" parent="1" style="curved=1;startArrow=none;endArrow=block;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="1450" />
+            </Array>
+            <mxPoint x="1120" y="1040" as="sourcePoint" />
+            <mxPoint x="670" y="1497" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
