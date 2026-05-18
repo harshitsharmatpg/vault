@@ -33,7 +33,7 @@
         <mxCell id="mPFpDhA7Xvu-ZXh2X5QR-30" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="pat-egw-mobility-sim-mgmt-performer&#xa;Receives arguments and executes workflow" vertex="1">
           <mxGeometry height="126" width="260" x="666" y="1466" as="geometry" />
         </mxCell>
-        <mxCell id="mPFpDhA7Xvu-ZXh2X5QR-31" parent="1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Case processed successfully" vertex="1">
+        <mxCell id="mPFpDhA7Xvu-ZXh2X5QR-31" parent="1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Case processed successfully" vertex="1">
           <mxGeometry height="214" width="214" x="689" y="1642" as="geometry" />
         </mxCell>
         <mxCell id="mPFpDhA7Xvu-ZXh2X5QR-32" edge="1" parent="1" source="mPFpDhA7Xvu-ZXh2X5QR-22" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="mPFpDhA7Xvu-ZXh2X5QR-23" value="">
