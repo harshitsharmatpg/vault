@@ -1183,10 +1183,185 @@
     </mxGraphModel>
   </diagram>
   <diagram id="x4QRATj_F9FtuonNTv0d" name="BulkSim">
-    <mxGraphModel dx="852" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1217" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="yrh0xRgcyR3drHPravmd-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=#808080;fontColor=light-dark(#333333,#cccccc);" value="Bulk SIM " vertex="1">
+          <mxGeometry height="2392" width="640" x="70" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-2" parent="yrh0xRgcyR3drHPravmd-1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Start" vertex="1">
+          <mxGeometry height="50" width="50" x="303" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-3" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Get Case Details from Salesforce" vertex="1">
+          <mxGeometry height="78" width="260" x="198" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-4" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Own Case and Assign to Tracy Boto" vertex="1">
+          <mxGeometry height="78" width="260" x="198" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-5" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Update Comment &#39;Bulk SIM procedure started&#39;" vertex="1">
+          <mxGeometry height="78" width="260" x="198" y="477" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-6" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Set Status to In Progress" vertex="1">
+          <mxGeometry height="54" width="233" x="211" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-9" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Update Case Status to On Hold" vertex="1">
+          <mxGeometry height="78" width="260" x="43" y="1887" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-10" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Add Comment" vertex="1">
+          <mxGeometry height="54" width="161" x="93" y="2040" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-11" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Move Case to Mobility Service Desk queue" vertex="1">
+          <mxGeometry height="78" width="260" x="43" y="2169" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-12" parent="yrh0xRgcyR3drHPravmd-1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="End" vertex="1">
+          <mxGeometry height="41" width="41" x="307" y="2322" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-13" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#E60000);fontColor=light-dark(#333333,#cccccc);" value="Update Billing Profile" vertex="1">
+          <mxGeometry height="54" width="213" x="377" y="936" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-14" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#E60000);fontColor=light-dark(#333333,#cccccc);" value="Add Activity Node" vertex="1">
+          <mxGeometry height="54" width="187" x="389" y="1065" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-15" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#FFB570);fontColor=light-dark(#333333,#cccccc);" value="Login to Oracle Order Management" vertex="1">
+          <mxGeometry height="78" width="260" x="353" y="1194" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-16" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#FFB570);fontColor=light-dark(#333333,#cccccc);" value="Create Bulk SIM Order" vertex="1">
+          <mxGeometry height="54" width="217" x="374" y="1371" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-17" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#FFB570);fontColor=light-dark(#333333,#cccccc);" value="Add SIM products" vertex="1">
+          <mxGeometry height="54" width="183" x="392" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-18" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#FFB570);fontColor=light-dark(#333333,#cccccc);" value="Capture ERP Order Number" vertex="1">
+          <mxGeometry height="54" width="255" x="356" y="1629" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-19" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Handle exceptions" vertex="1">
+          <mxGeometry height="54" width="192" x="387" y="1758" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-20" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Update Case with ERP Order Number" vertex="1">
+          <mxGeometry height="78" width="260" x="353" y="1887" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-21" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Add Closing Comment" vertex="1">
+          <mxGeometry height="54" width="216" x="375" y="2040" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-22" parent="yrh0xRgcyR3drHPravmd-1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#000000,#00A1E0);fontColor=light-dark(#333333,#cccccc);" value="Set Status to Resolved / Closed" vertex="1">
+          <mxGeometry height="78" width="260" x="353" y="2169" as="geometry" />
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-23" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-24" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-3" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-25" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-26" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-5" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-27" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-6" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="328" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-28" edge="1" parent="yrh0xRgcyR3drHPravmd-1" style="curved=1;startArrow=none;endArrow=block;exitX=0.24;exitY=0.99;rounded=0;" target="yrh0xRgcyR3drHPravmd-9" value="Fail">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="173" y="886" />
+            </Array>
+            <mxPoint x="259.02040816326576" y="828" as="sourcePoint" />
+            <mxPoint x="172.5" y="1758" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-30" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-9" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-31" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-10" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-32" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-11" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.01;entryY=0.3;rounded=0;" target="yrh0xRgcyR3drHPravmd-12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="173" y="2284" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-33" edge="1" parent="yrh0xRgcyR3drHPravmd-1" style="curved=1;startArrow=none;endArrow=block;exitX=0.76;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-13" value="Pass">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="483" y="886" />
+            </Array>
+            <mxPoint x="396.97959183673447" y="828" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-34" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-13" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-35" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-14" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-15" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-36" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-15" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-16" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-37" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-16" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-38" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-17" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-18" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-39" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-18" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-19" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-40" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-19" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-20" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-41" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-20" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-21" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-42" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-21" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" target="yrh0xRgcyR3drHPravmd-22" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-43" edge="1" parent="yrh0xRgcyR3drHPravmd-1" source="yrh0xRgcyR3drHPravmd-22" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=1.02;entryY=0.3;rounded=0;" target="yrh0xRgcyR3drHPravmd-12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="483" y="2284" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yrh0xRgcyR3drHPravmd-45" parent="yrh0xRgcyR3drHPravmd-1" style="rhombus;whiteSpace=wrap;html=1;fillColor=light-dark(#999999,#1F2020);strokeColor=light-dark(#999999,#E60000);" value="&lt;span&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(245, 245, 245));&quot;&gt;Validate Account against Siebel&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(245, 245, 245));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="212" x="222" y="736" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
