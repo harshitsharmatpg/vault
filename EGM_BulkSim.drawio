@@ -1,9 +1,143 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" pages="3">
   <diagram name="Page-1" id="RKFXDD3aQOo15K9epMLT">
-    <mxGraphModel>
+    <mxGraphModel dx="852" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Repo A &amp; Repo B Orchestration Overview" vertex="1">
+          <mxGeometry height="78" width="260" x="20" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Queue Item 1: CaseID, ProcessType, ReferenceKey (TransactionID + CaseID)" vertex="1">
+          <mxGeometry height="102" width="260" x="330" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Queue Item 2: CaseID, ReferenceKey, 21 Input Fields, ProcessIdentifier (EGM_BulkSIM)" vertex="1">
+          <mxGeometry height="126" width="260" x="330" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Queue Item 3: CaseID, ReferenceKey, OrderNumber, Status (Success/Failed), ReasonCode (if Failed)" vertex="1">
+          <mxGeometry height="150" width="260" x="330" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Success: OrderNumber" vertex="1">
+          <mxGeometry height="54" width="222" x="209" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-6" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Failed: Exception Reason" vertex="1">
+          <mxGeometry height="54" width="239" x="481" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Repo A Processes Results &amp; Case Closure" vertex="1">
+          <mxGeometry height="78" width="260" x="640" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-8" edge="1" parent="1" source="0nZlfEfqZ01t88E9cDzb-2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="0nZlfEfqZ01t88E9cDzb-3" value="Send to Queue">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-9" edge="1" parent="1" source="0nZlfEfqZ01t88E9cDzb-3" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="0nZlfEfqZ01t88E9cDzb-4" value="Process in Oracle">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-10" edge="1" parent="1" source="0nZlfEfqZ01t88E9cDzb-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.14;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="0nZlfEfqZ01t88E9cDzb-5" value="Upload Results to Queue">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="583" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0nZlfEfqZ01t88E9cDzb-11" edge="1" parent="1" source="0nZlfEfqZ01t88E9cDzb-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.86;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="0nZlfEfqZ01t88E9cDzb-6" value="Upload Results to Queue">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="583" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="z5P4gMeUTZiXdNxToQgv" name="Page-2">
+    <mxGraphModel dx="1002" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Queue Intake: CaseID, ReferenceKey, ProcessIdentifier" vertex="1">
+          <mxGeometry height="102" width="260" x="175" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Oracle Order Submission" vertex="1">
+          <mxGeometry height="54" width="235" x="187" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Set Transaction Status XAML" vertex="1">
+          <mxGeometry height="78" width="260" x="175" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Success: OrderNumber, Status=Success" vertex="1">
+          <mxGeometry height="78" width="260" x="20" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Business Exception, Status=Failed, Reason=Exception" vertex="1">
+          <mxGeometry height="102" width="260" x="330" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-6" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Upload Queue Item to Repo A: CaseID, ReferenceKey, OrderNumber(if Success), Status, ReasonCode(if Failed)" vertex="1">
+          <mxGeometry height="174" width="260" x="175" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Repo A Processes Results &amp; Case Closure" vertex="1">
+          <mxGeometry height="78" width="260" x="175" y="804" as="geometry" />
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-8" edge="1" parent="1" source="ciLjEGdSoC_iHqd0CDN3-1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ciLjEGdSoC_iHqd0CDN3-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-9" edge="1" parent="1" source="ciLjEGdSoC_iHqd0CDN3-2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ciLjEGdSoC_iHqd0CDN3-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-10" edge="1" parent="1" source="ciLjEGdSoC_iHqd0CDN3-3" style="curved=1;startArrow=none;endArrow=block;exitX=0.19;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ciLjEGdSoC_iHqd0CDN3-4" value="Success">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="391" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-11" edge="1" parent="1" source="ciLjEGdSoC_iHqd0CDN3-4" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.04;entryY=0;rounded=0;" target="ciLjEGdSoC_iHqd0CDN3-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-12" edge="1" parent="1" source="ciLjEGdSoC_iHqd0CDN3-3" style="curved=1;startArrow=none;endArrow=block;exitX=0.81;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ciLjEGdSoC_iHqd0CDN3-5" value="Failed">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="391" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-13" edge="1" parent="1" source="ciLjEGdSoC_iHqd0CDN3-5" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.96;entryY=0;rounded=0;" target="ciLjEGdSoC_iHqd0CDN3-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ciLjEGdSoC_iHqd0CDN3-14" edge="1" parent="1" source="ciLjEGdSoC_iHqd0CDN3-6" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ciLjEGdSoC_iHqd0CDN3-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="GJ9bVVyjITEyWkJ3aVNG" name="Page-3">
+    <mxGraphModel dx="1091" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CxoML1RnHO7Wwdw2ybQr-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="One way&amp;nbsp;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="41" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CxoML1RnHO7Wwdw2ybQr-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Hop back&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CxoML1RnHO7Wwdw2ybQr-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Notes :&amp;nbsp;&lt;br&gt;Liase with Sarves while working on logistics repo&lt;br&gt;Speak with Hem on Account Creation repo for logistics (Overkill ?)&lt;div&gt;&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;br&gt;BPMA 993&lt;br&gt;&lt;br&gt;Create the Q hops diagram.(Siva)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="390" width="240" x="540" y="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
